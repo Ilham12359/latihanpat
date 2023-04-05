@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/riffic-free" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="grid-cols-1   lg:gap-8 lg:grid-cols-2 mx-4 grid ">
+        <div class=" lg:mt-40 mt-10 col-span-1">
+            <h3 style="font-family: 'Riffic Free', sans-serif;
+            " class="text-6xl lg:text-9xl text- text-center">HAPPY <br>
+                <p>BIRTHDAY </p>
+            </h3>
+            <h2 style="font-family: 'Oswald', sans-serif;" class="text-center mt-3 lg:text-5xl my-10 text-3xl">Felim Abinaya</h2>
+            <p style="font-family: 'Poppins', sans-serif;" class="mt-8 mx-auto lg:text-2xl max-w-2xl text-center">Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Reprehenderit aperiam reiciendis laudantium aliquid, ratione
+                asperiores tempora unde eius id rerum recusandae. Quisquam totam saepe accusantium velit beatae commodi
+                qui nulla. </p>
+        </div>
+        <div class="col-span-1  scale-[0.5] lg:scale-[0.6]  ">
+            <img class="mx-auto -mt-20 lg:mt-0" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png" alt="">
+        </div>
+    </div>
+
+    <section class="   swiper mt-8 lg:mt-20 mySwiper">
+
+        <div class="swiper-wrapper z-50">
+            <div class="card z-50 swiper-slide">
+                <div class="card__content">
+                    <span class="card__title">Ui Designer</span>
+                    <span class="card__name">Sarah Bowen</span>
+                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                        provident non tempora odio est sunt, ipsum</p>
+                    
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+
+
+                <div class="card__content">
+                    <span class="card__title">Web Developer</span>
+                    <span class="card__name">David Murphy</span>
+                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                        provident non tempora odio est sunt, ipsum</p>
+                    
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+
+
+                <div class="card__content">
+                    <span class="card__title">Mobile Designer</span>
+                    <span class="card__name">Kelsey West</span>
+                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                        provident non tempora odio est sunt, ipsum</p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            breakpoints: {
+    
+    1024: {
+      slidesPerView: 3
+    }},
+            grabCursor: false,
+            centeredSlides: true,
+            slidesPerView: 1.5,
+            keyboard: true,
+            cssMode: false,
+            initialSlide: 1,
+      
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 400,
+                modifier: 1,
+                slideShadows: false,
+
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <div class="h-[100px] bg-black mt-28 w-full"></div>
+</body>
+
+</html>
