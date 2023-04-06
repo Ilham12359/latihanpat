@@ -17,11 +17,12 @@
 /* ----------- SLIDER ------------ */
 .swiper{
   width: 100%;
+  height: 100%;
 }
 
 .swiper-wrapper{
   width: 100%;
-  height: 35em;
+  
   display: flex;
   align-items: center;
 }
@@ -29,9 +30,10 @@
 .card{
   width: 20em;
   height: 100%;
-  background-color: #fff;
+  
+
   border-radius: 2em;
-  border:1px solid black;
+  
   padding: 2em 1em;
   display: flex;
   align-items: center;
@@ -41,7 +43,7 @@
 }
 
 .swiper-slide:not(.swiper-slide-active){
-  filter: blur(1px);
+  filter: blur(3px);
 }
 
 .card__image{
@@ -58,6 +60,8 @@
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+ object-position: 0px -30px;
+  
 }
 
 .card__content{
