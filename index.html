@@ -26,6 +26,7 @@
 </head>
 
 <body>
+    <div id="felim" class="hidden">
     <div class=" bg-right h-[1000px] lg:h-[100vh] bg-[url('./img/bg.jpg')] bg-no-repeat pt-2 bg-cover">
 
         <div
@@ -56,7 +57,7 @@
     </div>
 
     <div class="pt-[50px] pb-[100px] bg-[url('https://wallpaperaccess.com/full/6553853.jpg')] bg-cover bg-no-repeat">
-        <section data-aos="fade-up" class="   swiper mt-8 lg:mt-20 mySwiper">
+        <section data-aos="fade-up" class=" swiper mt-8 lg:mt-20 mySwiper">
 
             <div class="swiper-wrapper  mb-20  z-50">
                 <div class="card  z-50 bg-white/70 shadow-2xl swiper-slide">
@@ -91,7 +92,7 @@
                         <p class="card__text text-justify">Happy level-up day, Kak Felim! Wish u all the best, semoga
                             hal-hal yang kamu inginkan bisa terkabulkan ditahun ini! I hope you're always happy and all
                             your dreams will come true. Aku tau kamu lagi PAT, tapi tetep aja, jangan lupa
-                            bersenang-senang ya, soalnya hari ini hari spesialmu! <D< /p>
+                            bersenang-senang ya, soalnya hari ini hari spesialmu! </p>
 
                     </div>
                 </div>
@@ -155,6 +156,45 @@
     </script>
     <script>
         AOS.init();
+    </script>
+    </div>
+
+<div id="box" class="flex justify-center h-[100vh] items-center">
+    <div class="border border-black py-16 px-5 w-[95%] h-fit  lg:w-[50%]">
+        <h1 class="text-center text-2xl">Gaya apa yang bertanggung jawab dalam mengikat proton dan neutron di inti atom sehingga mereka dapat menyatu membentuk inti atom? Dan apakah gaya tersebut termasuk ke dalam 4 gaya fundamental alam semesta? </h1>
+
+    <div  class="grid gap-5 mt-10 grid-cols-2 grid-rows-2">
+        <div id="s1" class="col-span-1 text-center border-black border cursor-pointer">Gravitasi-Ya</div>
+        <div id="s2" class="col-span-1 text-center border border-black cursor-pointer">Elektromagnetik-Tidak</div>
+        <div id="benar" class="col-span-1 text-center border border-black cursor-pointer">Nuklir Kuat-Ya</div>
+        <div id="s3" class="col-span-1 text-center border border-black cursor-pointer">Nuklir kuat-Tidak</div>
+    </div>
+</div>
+</div>
+
+    <script>
+
+    </script>
+    <script>
+        let s3 = document.getElementById('s3')
+        let s2 = document.getElementById('s2')
+        let s1 = document.getElementById('s1')
+        let box = document.getElementById('box')
+        let b = document.getElementById('benar')
+        let f = document.getElementById('felim')
+        b.addEventListener('click', function(){
+            f.style.display = 'block'
+            box.style.display = 'none'
+        })
+        s1.addEventListener('click',function(){
+            alert('Jawaban Salah!')
+        })
+        s2.addEventListener('click',function(){
+            alert('Jawaban Salah!')
+        })
+        s3.addEventListener('click',function(){
+            alert('Jawaban Salah!')
+        })
     </script>
 </body>
 
